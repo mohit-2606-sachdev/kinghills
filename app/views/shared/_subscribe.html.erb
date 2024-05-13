@@ -1,0 +1,61 @@
+
+<style>
+    .app_background{
+        background-color: orangered;
+        height: 300px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .app_download{
+        width: 100%;
+        font-weight:700 ;
+        line-height: 15px;
+    }
+
+    .app_mobile_orange{
+        color: orangered;
+    }
+
+    .app_background p{
+        text-align: left;
+        font-size: 15px;
+        font-weight: 300;
+        width: 32%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .download_padding_top{
+        padding-top: 80px ;
+        }
+
+        .download_button{
+            margin: 25px;
+            background-color: orangered;
+            font-size: 14px;
+            
+            padding: 8px 15px;
+            border-radius: 7px;
+            }
+</style>
+
+
+<div class="app_background">
+    <h2 class="app_download download_padding_top">
+        Subscribe
+    </h2>
+
+    <h1 class="app_download app_mobile_orange">
+        Our Newletter
+    </h1>
+
+    <p class="">
+        It is a long established fact that a reader will be distracted by the readable.
+    </p>
+
+    <form action="<%= subscribe_path %>" method="post">
+        <input type="email" id="email" name="email" placeholder="Enter Email" required>
+        <button type="submit">Subscribe</button>
+  </form>
+</div>

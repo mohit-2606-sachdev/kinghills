@@ -1,0 +1,11 @@
+<%= render "poster" %>
+<div class="main_container" >
+  <div class="title_container">
+      <p class="title ">
+        <%= @policy.title %>
+      </p>
+  </div>
+  <div class="description">
+    <%= @policy.description.html_safe %>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+
+<style>
+    .policy_background_poster{
+        background-image: url(<%= asset_path('policy_background.jpg') %>);
+        height: 300px;
+        background-size: cover;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .policy_background_poster h1{
+        width: 100%;
+        font-weight:700 ;
+        color: orangered;
+        padding-top: 90px;
+    }
+
+    .policy_background_poster p{
+        text-align: left;
+        font-size: 16px;
+        font-weight: 700;
+        width: 50%;
+        margin: auto;
+        color: white;
+    }
+</style>
+
+
+<div class="policy_background_poster">
+    <h1>
+    <%= @policy.title.upcase %>
+    </h1>
+
+    <p>
+        Best Offer Travel Packages Deals made especially for you, Everything you need—on a budget. Thank You From kinghillstravels
+    </p>
+</div>
